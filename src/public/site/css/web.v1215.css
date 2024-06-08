@@ -1,0 +1,518 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: local("Segoe UI"),url('/Content/web/fonts/Segoe UI/Segoe UI.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local("Segoe UI Italic"),url('/Content/web/fonts/Segoe UI/Segoe UI Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local("Segoe UI Bold"),url('/Content/web/fonts/Segoe UI/Segoe UI Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local("Segoe UI Bold Italic"),url('/Content/web/fonts/Segoe UI/Segoe UI Bold Italic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local("Segoe UI Semilight"),url('/Content/web/fonts/Segoe UI/Segoe UI Semilight.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: local("Segoe UI Semilight Italic"),url('/Content/web/fonts/Segoe UI/Segoe UI Semilight Italic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'hoangha';
+    src: url('/Content/web/fonts/icon/fonts/hoangha9.eot?');
+    src: url('/Content/web/fonts/icon/fonts/hoangha9.eot?#iefix') format('embedded-opentype'),url('/Content/web/fonts/icon/fonts/hoangha9.woff') format('woff'),url('/Content/web/fonts/icon/fonts/hoangha9.ttf') format('truetype'),url('/Content/web/fonts/icon/fonts/hoangha9.svg#hoangha') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+[class*='icon-']:before {
+    display: inline-block;
+    font-family: 'hoangha';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-cart:before {
+    content: 'A'
+}
+
+.icon-chinhhang:before {
+    content: 'B'
+}
+
+.icon-maycu:before {
+    content: 'C'
+}
+
+.icon-doitra:before {
+    content: 'D'
+}
+
+.icon-filter:before {
+    content: 'E'
+}
+
+.icon-flash:before {
+    content: 'F'
+}
+
+.icon-flash2:before {
+    content: 'G'
+}
+
+.icon-fly:before {
+    content: 'H'
+}
+
+.icon-freeship:before {
+    content: 'I'
+}
+
+.icon-game:before {
+    content: 'J'
+}
+
+.icon-suachua:before {
+    content: 'K'
+}
+
+.icon-headphone:before {
+    content: 'L'
+}
+
+.icon-home:before {
+    content: 'M'
+}
+
+.icon-hotline:before {
+    content: 'N'
+}
+
+.icon-laptop:before {
+    content: 'O'
+}
+
+.icon-left:before {
+    content: 'P'
+}
+
+.icon-news:before {
+    content: 'Q'
+}
+
+.icon-phone:before {
+    content: 'R'
+}
+
+.icon-right:before {
+    content: 'S'
+}
+
+.icon-sac:before {
+    content: 'T'
+}
+
+.icon-search:before {
+    content: 'U'
+}
+
+.icon-simthe:before {
+    content: 'V'
+}
+
+.icon-truck:before {
+    content: 'W'
+}
+
+.icon-watch:before {
+    content: 'X'
+}
+
+.icon-fire:before {
+    content: 'Y'
+}
+
+.icon-facebook:before {
+    content: 'Z'
+}
+
+.icon-youtube:before {
+    content: 'a'
+}
+
+.icon-instagram:before {
+    content: 'b'
+}
+
+.icon-tag:before {
+    content: 'c'
+}
+
+.icon-member:before {
+    content: 'd'
+}
+
+.icon-clock:before {
+    content: 'e'
+}
+
+.icon-account:before {
+    content: 'f'
+}
+
+.icon-minutes:before {
+    content: 'g'
+}
+
+.icon-pen:before {
+    content: 'h'
+}
+
+.icon-checked:before {
+    content: 'i'
+}
+
+.icon-leftar:before {
+    content: 'j'
+}
+
+.icon-rightar:before {
+    content: 'k'
+}
+
+.icon-comment:before {
+    content: 'l'
+}
+
+.icon-controls:before {
+    content: 'm'
+}
+
+.icon-help:before {
+    content: 'n'
+}
+
+.icon-job:before {
+    content: 'o'
+}
+
+.icon-logout:before {
+    content: 'p'
+}
+
+.icon-love:before {
+    content: 'q'
+}
+
+.icon-order-mgr:before {
+    content: 'r'
+}
+
+.icon-phone-table:before {
+    content: 's'
+}
+
+.icon-tuyendung:before {
+    content: 't'
+}
+
+.icon-world:before {
+    content: 'u'
+}
+
+.icon-accessory:before {
+    content: 'v'
+}
+
+.icon-freeship-truck:before {
+    content: 'w'
+}
+
+.icon-localtion:before {
+    content: 'x'
+}
+
+.icon-sending:before {
+    content: 'y'
+}
+
+.icon-shield:before {
+    content: 'z'
+}
+
+.icon-config:before {
+    content: '0'
+}
+
+.icon-star:before {
+    content: '1'
+}
+
+.icon-cart-index:before {
+    content: '2'
+}
+
+.icon-eye:before {
+    content: '3'
+}
+
+.icon-edit-squad:before {
+    content: '4'
+}
+
+.icon-change-avatar:before {
+    content: '5'
+}
+
+.icon-calling:before {
+    content: '6'
+}
+
+.icon-youtube-mobile:before {
+    content: '7'
+}
+
+.icon-pc:before {
+    content: '8'
+}
+
+.icon-login-mobile:before {
+    content: '9'
+}
+
+.icon-love-1:before {
+    content: '!'
+}
+
+.icon-instagram-mobile:before {
+    content: '"'
+}
+
+.icon-mobile-menu2:before {
+    content: '#'
+}
+
+.icon-facebook-mobile:before {
+    content: '$'
+}
+
+.icon-menu1:before {
+    content: '%'
+}
+
+.icon-plus:before {
+    content: '&'
+}
+
+.icon-barcode:before {
+    content: '\''
+}
+
+.icon-love-2:before {
+    content: '('
+}
+
+.icon-tablet:before {
+    content: ')'
+}
+
+.icon-tiktok:before {
+    content: '*'
+}
+
+.icon-icon-poster-01:before {
+    content: '+'
+}
+
+.icon-icon-money:before {
+    content: ','
+}
+
+.icon-icon-poster:before {
+    content: '-'
+}
+
+.icon-icon-calendar:before {
+    content: '.'
+}
+
+.icon-camera:before {
+    content: '/'
+}
+
+.icon-sale:before {
+    content: '['
+}
+
+.icon-pay:before {
+    content: '\5c'
+}
+
+.icon-apple:before {
+    content: ']'
+}
+
+.icon-samsung:before {
+    content: '^'
+}
+
+.icon-usd:before {
+    content: '_'
+}
+
+.icon-tivi:before {
+    content: '`'
+}
+
+.icon-qrcode:before {
+    content: '{'
+}
+
+.icon-COD:before {
+    content: '|'
+}
+
+.icon-wallet:before {
+    content: '}'
+}
+
+.icon-monitor:before {
+    content: '~'
+}
+
+.icon-pc:before {
+    content: '?'
+}
+
+@font-face {
+    font-family: 'hoangha_v2';
+    src: url('/Content/web/fonts/icon/fonts/hoangha_v24.eot?');
+    src: url('/Content/web/fonts/icon/fonts/hoangha_v24.eot?#iefix') format('embedded-opentype'),url('/Content/web/fonts/icon/fonts/hoangha_v24.woff') format('woff'),url('/Content/web/fonts/icon/fonts/hoangha_v24.ttf') format('truetype'),url('/Content/web/fonts/icon/fonts/hoangha_v24.svg#hoangha_v2') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+[class*='iconv2-']:before {
+    display: inline-block;
+    font-family: 'hoangha_v2';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.iconv2-iphone:before {
+    content: 'A'
+}
+
+.iconv2-trash:before {
+    content: 'B'
+}
+
+.iconv2-fire:before {
+    content: 'C'
+}
+
+.iconv2-uptrend:before {
+    content: 'D'
+}
+
+.iconv2-remove:before {
+    content: 'E'
+}
+
+.iconv2-star:before {
+    content: 'F'
+}
+
+.iconv2-history:before {
+    content: 'G'
+}
+
+.iconv2-shopping-cart:before {
+    content: 'H'
+}
+
+.iconv2-like:before {
+    content: 'I'
+}
+
+.iconv2-personalcard:before {
+    content: 'J'
+}
+
+.iconv2-tradein:before {
+    content: 'K'
+}
+
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+section .corevalue {
+    display: flex;
+    padding: 10px 60px;
+    margin: 20px 0;
+}
+section .corevalue .item {
+    display: flex;
+}
+section .corevalue .item {
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+[class*='icon-']:before {
+    display: inline-block;
+    font-family: 'hoangha';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-chinhhang:before {
+    content: 'B';
+}
+section .corevalue .item .icon {
+    font-size: 60px;
+    margin-right: 10px;
+    background: linear-gradient(to right, #00917a, #00483d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

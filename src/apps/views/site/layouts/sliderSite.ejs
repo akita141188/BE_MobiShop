@@ -1,0 +1,41 @@
+           	<!--	Slider	-->
+			   <div class="row" style="padding: 15px;">
+           	<div id="slide" class="carousel slide" data-ride="carousel">
+           	  <!-- Indicators -->
+           	  <ul class="carousel-indicators">
+           	    <%for(let i=0; i< sliders.length; i++){%>
+           	    <% if (sliders[i].status) { %>
+           	    <li data-target="#slide" data-slide-to="<%=i%>" <% if (i === 0) { %>class="active" <% } %>></li>
+           	    <%}%>
+				<%}%>
+           	  </ul>
+
+           	  <!-- The slideshow -->
+           	  <div class="carousel-inner">
+           	    <% let index = 0; %>
+           	    <%for(let slider of sliders){%>
+           	    <%if(slider.status){%>
+           	    <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+           	      <a href="<%=slider.url%>"><img style="border-radius: 10px;" class="d-block w-100" src="../Uploads/images/<%=slider.image%>"></a>
+           	    </div>
+           	    <% index++; %>
+           	    <%}%>
+				<%}%>
+           	  </div>
+
+           	  <!-- Left and right controls -->
+           	  <a class="carousel-control-prev" href="#slide" data-slide="prev">
+           	    <span class="carousel-control-prev-icon"></span>
+           	  </a>
+           	  <a class="carousel-control-next" href="#slide" data-slide="next">
+           	    <span class="carousel-control-next-icon"></span>
+           	  </a>
+
+           	</div>
+           	<!--	End Slider	-->
+			</div>
+			<div class="row">
+
+			   <div id="main" class="col-lg-8 col-md-12 col-sm-12">
+
+			
