@@ -17,7 +17,7 @@ exports.loginCustomer = async (req, res) => {
         }
         if (customer && validPassword) {
             const accessToken = jwt.sign(
-                { email: body.email, password: body.password },
+                { _id : customer._id},
                 config.get("app.jwtAccessKey"),
                 { expiresIn: "1d" }
             )

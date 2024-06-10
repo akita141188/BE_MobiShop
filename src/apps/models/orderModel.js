@@ -2,8 +2,7 @@ const mongoose = require("../../common/database")();
 
 const orderSchema = new mongoose.Schema({
     customer_id: {
-        type: mongoose.Types.ObjectId,
-        ref: 'Customers',
+        type : String
     },
     orderId: {
         type : String,
@@ -44,7 +43,14 @@ const orderSchema = new mongoose.Schema({
         },
         name: {
             type: String,
-        }
+            required : false
+        },
+        thumbnails: [
+            {
+                type: String,
+                required : false
+            }
+        ]
     }],
     confirmed: {
         type: Boolean,
@@ -57,6 +63,10 @@ const orderSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
       },
+    status : {
+        type : Number,
+        default : 2
+    }
 
 
 }, { timestamps: true })
