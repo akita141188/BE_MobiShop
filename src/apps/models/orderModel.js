@@ -50,7 +50,7 @@ const orderSchema = new mongoose.Schema({
                 type: String,
                 required : false
             }
-        ]
+        ],
     }],
     confirmed: {
         type: Boolean,
@@ -70,5 +70,16 @@ const orderSchema = new mongoose.Schema({
 
 
 }, { timestamps: true })
+
+// Middleware to remove empty thumbnails array
+orderSchema.pre('save', function(next) {
+    this.items.forEach(item => {
+        if (item.thumbnails && item.thumbnails.length === 0) {
+            item.thumbnails = undefined;
+        }
+    });
+    next();
+});
+
 const OrderModel = mongoose.model("Orders", orderSchema, "orders");
 module.exports = OrderModel;
