@@ -56,11 +56,11 @@ exports.order = async (req, res) => {
 exports.ordersCutomer = async (req, res) => {
     try {
         const query = {};
-        query.id = req.params.id;
-        const limit = parseInt(req.query.limit) || 10;
+        const {id} = req.params;
+        const limit = parseInt(req.query.limit) || 5;
         const page = parseInt(req.query.page) || 1;
         const skip = page * limit - limit;
-
+        query.customer_id = id
         const orders = await OrderModel
             .find(query)
             .sort({ _id: -1 })
